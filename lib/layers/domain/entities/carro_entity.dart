@@ -6,17 +6,17 @@ class CarroEntity {
   int qtdPortas;
   double valor;
 
-  CarroEntity ({required this.placa,required this.qtdPortas,required this.valor});
+  CarroEntity(
+      {required this.placa, required this.qtdPortas, required this.valor});
 
   // regra de negocio da classe
-  double get valorReal{
+  double get valorReal {
     return valor * qtdPortas;
   }
 
-  setLogicaValorIncremental(){
-    if(valorReal > 10000.00){
-      valor * 2;
+  setLogicaValorIncremental() {
+    if (valorReal > 10000.00) {
+      valor *= 2;
     }
   }
-
 }
