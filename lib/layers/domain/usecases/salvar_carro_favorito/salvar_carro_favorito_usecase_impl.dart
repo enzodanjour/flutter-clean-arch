@@ -3,10 +3,10 @@ import 'package:arq/layers/domain/repositories/salvar_carro_favorito_repository.
 
 import 'salvar_carro_favorito_usecase.dart';
 
-class SalvarCarroFavoritoUsecaseImpl implements SalvarCarroFavoritoUseCase {
+class SalvarCarroFavoritoUseCaseImpl implements SalvarCarroFavoritoUseCase {
   final SalvarCarroFavoritoRepository _salvarCarroRepository;
 
-  SalvarCarroFavoritoUsecaseImpl(this._salvarCarroRepository);
+  SalvarCarroFavoritoUseCaseImpl(this._salvarCarroRepository);
 
   @override
   Future<bool> call(CarroEntity carroEntity) async  {
